@@ -106,7 +106,7 @@ The following two files are used by the walkthrough.
     <books>
       <!--Books That Cost Below Average-->
       <xsl:for-each select="/bookstore/book">
-        <xsl:if test="price < $bookAverage">
+        <xsl:if test="price &lt; $bookAverage">
           <xsl:copy-of select="."/>
         </xsl:if>
       </xsl:for-each>
